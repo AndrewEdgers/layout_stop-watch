@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+}
+
+.clock {
+  box-sizing: border-box;
+  border: 5px solid #000;
+  border-radius: 50%;
+  width: 80vmin;
+  height: 80vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock__dot {
+  transform-origin: 50% 100%;
+  background-color: #000;
+  border-radius: 5px;
+  width: 1%;
+  height: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.clock__dot:first-child {
+  transform: translateX(-50%)translateY(-100%)rotate(0)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(2) {
+  transform: translateX(-50%)translateY(-100%)rotate(30deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(3) {
+  transform: translateX(-50%)translateY(-100%)rotate(60deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(4) {
+  transform: translateX(-50%)translateY(-100%)rotate(90deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(5) {
+  transform: translateX(-50%)translateY(-100%)rotate(120deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(6) {
+  transform: translateX(-50%)translateY(-100%)rotate(150deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(7) {
+  transform: translateX(-50%)translateY(-100%)rotate(180deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(8) {
+  transform: translateX(-50%)translateY(-100%)rotate(210deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(9) {
+  transform: translateX(-50%)translateY(-100%)rotate(240deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(10) {
+  transform: translateX(-50%)translateY(-100%)rotate(270deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(11) {
+  transform: translateX(-50%)translateY(-100%)rotate(300deg)translate(35vmin)rotate(90deg);
+}
+
+.clock__dot:nth-child(12) {
+  transform: translateX(-50%)translateY(-100%)rotate(330deg)translate(35vmin)rotate(90deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -100%)rotate(0);
+  }
+
+  to {
+    transform: translate(-50%, -100%)rotate(360deg);
+  }
+}
+
+.clock__hours {
+  transform-origin: 50% 100%;
+  background-color: #000;
+  border-radius: 20px;
+  width: 25px;
+  height: 25%;
+  animation: 60s linear infinite rotate;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0);
+}
+
+.clock__minutes {
+  transform-origin: 50% 100%;
+  background-color: gray;
+  border-radius: 10px;
+  width: 15px;
+  height: 45%;
+  animation: 5s steps(60, end) infinite rotate;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0);
+}
+
+.clock__centre {
+  background-color: #fff;
+  border: 15px solid red;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
